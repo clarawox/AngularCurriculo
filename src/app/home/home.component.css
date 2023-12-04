@@ -1,0 +1,56 @@
+body {
+margin: 0;
+line-height: 1.6;
+}
+
+#espaco{
+margin-top: 150px;
+}
+
+#about-us {
+background-color: #fff;
+padding: 50px 0;
+background-color: #e6e6e6;
+}
+
+.container {
+max-width: 800px;
+margin: 0 auto;
+}
+
+h2, h3 {
+color: #040b14;
+}
+
+h3 {
+margin-top: 20px;
+}
+
+p {
+margin-bottom: 20px;
+}
+
+.intro{
+    text-align: center;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.btn-custom{
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #fff;
+    border-color: #EE05F2;
+    color: #EE05F2;
+    font-weight: 600;
+}
+.btn-custom:hover{
+    color: #fff;
+    background-color: #EE05F2;
+}
+
+.intro h1{
+    color: #EE05F2;
+    margin-bottom: 30px;
+    font-weight: 600;
+}

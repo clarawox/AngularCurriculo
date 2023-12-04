@@ -1,0 +1,63 @@
+<section class="registration-section">
+    <div class="container" *ngIf="cadastroFlag === false">
+        <div class="row">
+            <!-- Lado esquerdo - Logo -->
+            <div class="col-md-6">
+                <img src="../../assets/img/Logo WorkIn.png" alt="WorkedIn Logo" class="img-fluid"><br>
+            </div>
+            <!-- Lado direito - Formulário de Cadastro -->
+            <div class="col-md-6">
+                <div class="registration-form">
+                    <h2>Login</h2>
+                    <form (ngSubmit)="login()" class="loginForm">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Seu Email" required [(ngModel)]="loginUser.email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Senha</label>
+                            <input type="password" class="form-control" id="password" placeholder="Sua Senha" required [(ngModel)]="loginUser.password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                        <p class="createAccount">Não possui conta? <a (click)="inverteFlag()">Cadastre-se aqui!</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" *ngIf="cadastroFlag === true">
+        <div class="row">
+        <!-- Lado esquerdo - Logo -->
+        <div class="col-md-6">
+            <img src="../../assets/img/Logo WorkIn.png" alt="WorkedIn Logo" class="img-fluid"><br>
+        </div>
+        <!-- Lado direito - Formulário de Cadastro -->
+        <div class="col-md-6">
+            <div class="registration-form">
+            <h2>Cadastre-se</h2>
+            <form (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" class="form-control" id="name" placeholder="Seu Nome" [(ngModel)]="user.name">
+                </div>
+                <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Seu Email" [(ngModel)]="user.email">
+                </div>
+                <div class="form-group">
+                <label for="password">Senha</label>
+                <input type="password" class="form-control" id="password" placeholder="Sua Senha" [(ngModel)]="user.password">
+                </div>
+                <div class="form-group">
+                <label for="resume">Currículo (Anexo)</label>
+                <input type="file" class="form-control-file" id="resume">
+                </div>
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+                <p class="createAccount">Já possui conta? <a (click)="inverteFlag()">Faça seu login aqui!</a></p>
+            </form>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,31 @@
+<!-- ======= Header ======= -->
+<header id="header">
+  <div class="container d-flex align-items-center justify-content-between">
+    <div class="profile">
+      <img src="../assets/img/Logo WorkIn.png" alt="WorkedIn Logo" style="width: 100px;">
+      <h1 class="text-light">WorkedIn</h1>
+    </div>
+
+    <nav id="navbar" class="nav-menu navbar">
+      <ul class="d-flex">
+        <li id="seletor" matRipple>
+          <button mat-button [matMenuTriggerFor]="menu" id="seletor">Selecione o Currículo</button>
+          <mat-menu #menu="matMenu" class="custom-menu">
+            <button mat-menu-item routerLink="/" routerLinkActive="active">---------</button>
+            <button mat-menu-item routerLink="/" routerLinkActive="active">Inicio</button>
+            <button mat-menu-item routerLink="/quezia" routerLinkActive="active">Quezia Ribeiro</button>
+            <button mat-menu-item routerLink="/pietro" routerLinkActive="active">Pietro Bontempi</button>
+            <button mat-menu-item routerLink="/maria" routerLinkActive="active">Maria Clara Silva</button>
+            <button mat-menu-item routerLink="/julio" routerLinkActive="active">Julio César Paduani</button>
+            <button mat-menu-item routerLink="/luiza" routerLinkActive="active">Luiza Miguel de Sales</button>
+          </mat-menu>
+        </li>
+        <li><a routerLink="/cadastro"><i class="bx bx-user"></i> <span>Criar Cadastro</span></a></li>
+        <li><a routerLink="/login"><i class="bx bx-user"></i> <span>Login</span></a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
+  </div>
+</header><!-- End Header -->
+
+
+<router-outlet></router-outlet>

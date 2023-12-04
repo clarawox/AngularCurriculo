@@ -1,0 +1,30 @@
+.registration-section {
+padding: 50px 0;
+margin-top: 150px;
+}
+
+.registration-form {
+    border: 2px solid #EE05F2;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.registration-form h2{
+color: #EE05F2;
+}
+
+.registration-form label {
+color: #EE05F2;
+font-weight: bold;
+}
+
+.registration-form input,
+.registration-form label {
+margin-bottom: 15px;
+}
+
+.registration-form button {
+background-color: #EE05F2;
+color: #fff;
+}

@@ -1,0 +1,98 @@
+body {
+margin: 0;
+font-family: 'Poppins', sans-serif;
+}
+
+#header {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+background: #040b14;
+padding: 15px;
+z-index: 9999;
+}
+
+.container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.profile {
+display: flex;
+align-items: center;
+}
+
+.profile img {
+margin-right: 15px;
+}
+
+.profile h1 {
+font-size: 24px;
+margin: 0;
+padding: 0;
+font-weight: 600;
+color: #fff;
+}
+
+.nav-menu ul {
+display: flex;
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+.nav-menu li {
+margin-right: 20px;
+}
+
+.nav-menu a {
+display: flex;
+align-items: center;
+color: #a8a9b4;
+text-decoration: none;
+transition: 0.3s;
+font-size: 15px;
+}
+
+.nav-menu a:hover,
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu li:hover > a {
+color: #fff;
+}
+
+.nav-menu i {
+font-size: 24px;
+padding-right: 8px;
+color: #6f7180;
+}
+
+#seletor {
+position: relative;
+z-index: 10000; /* Ajuste o valor conforme necessário para ficar por cima do header */
+}
+
+.mat-menu-panel {
+z-index: 10001; /* Ajuste o valor para garantir que o dropdown fique acima do header */
+}
+
+.custom-menu {
+position: fixed !important;
+z-index: 10001 !important; /* Ajuste o valor conforme necessário */
+}
+
+#seletor{
+    background-color: #EE05F2;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.navbar span{
+    color: #EE05F2;
+}
+
+.navbar i{
+    color: #EE05F2;
+}
