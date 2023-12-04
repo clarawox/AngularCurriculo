@@ -56,7 +56,7 @@ export class AuthenticationService {
       console.log(decodedToken);
 
       return {
-        name: decodedToken.firstName,
+        name: decodedToken.name,
         email: decodedToken.email,
       };
     }

@@ -12,7 +12,6 @@ import { PietroComponent } from './pietro/pietro.component';
 import { QueziaComponent } from './quezia/quezia.component';
 import { HomeComponent } from './home/home.component';
 import { MariaComponent } from './maria/maria.component';
-import { CadastroComponent } from './cadastro/cadastro.component';
 import { JulioComponent } from './julio/julio.component';
 import { LuizaComponent } from './luiza/luiza.component';
 import { LoginComponent } from './login/login.component';
@@ -24,7 +23,6 @@ import { LoginComponent } from './login/login.component';
     QueziaComponent,
     HomeComponent,
     MariaComponent,
-    CadastroComponent,
     JulioComponent,
     LuizaComponent,
     LoginComponent
